@@ -7,7 +7,7 @@ pipeline {
         
         stage('checkout'){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Pinkysahoo43/jenkins_sonar_demo.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Pinkysahoo43/jenkins-sonar-demo.git']])
             }    
         }
         stage('Build'){
